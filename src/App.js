@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css"
+import Square from "./Square";
 
 function App() {
   return (
     <div className="App">
-        <div className="square"></div>
+      <Square />
     </div>
   );
 }
