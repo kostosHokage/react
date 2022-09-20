@@ -1,9 +1,11 @@
 import React from "react";
+import "./App.css"
+import Square from "./Square";
 
 function App() {
   return (
     <div className="App">
-        <h1>Тестовое сообщение</h1>
+      <Square />
     </div>
   );
 }
