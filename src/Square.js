@@ -1,14 +1,22 @@
-import React, {Component} from 'react';
+import React from "react";
 import "./App.css"
 
-class Square extends Component {
-    render() {
-        return (
-            <div className="square">
-                <h1>Square</h1>
-            </div>
-        );
-    }
+export default function Square(props) {
+
+    let objects = [
+        {name: 'Hello', id: 1},
+        {name: 'Hello', id: 2},
+        {name: 'Hello', id: 3},
+        {name: 'Hello', id: 4},
+    ]
+
+
+    return (
+
+        <div className="square">
+            {props.objects.map(el => <li id={el.id}>{el.name}</li>)}
+        </div>
+
+)
 }
 
-export default Square;
