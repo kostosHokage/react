@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.9bb97461.css","mappings":"AAAA,QAGI,uBAAwB,CACxB,qBAAuB,CAHvB,YAAa,CACb,WAGJ","sources":["App.css"],"sourcesContent":[".square {\n    height: 100px;\n    width: 100px;\n    background-color: orange;\n    border: 1px solid black;\n}\n\n"],"names":[],"sourceRoot":""}
