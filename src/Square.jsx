@@ -18,32 +18,53 @@ export default function Square() {
   const objectsCopy = [
     { id: 1, value: 1 },
     { id: 2, value: 12 },
-    { id: 3, value: 2 },
+    { id: 3, value: -2 },
     { id: 4, value: 1 },
-    { id: 5, value: 4 },
+    { id: 5, value: -4 },
     { id: 6, value: 0 },
-    { id: 7, value: 11 },
+    { id: 7, value: -11 },
     { id: 8, value: 2 },
-    { id: 9, value: 7 },
+    { id: 9, value: 5 },
     { id: 10, value: 6 },
   ];
 
   return (
     <div className="container">
-      {objects.map((el) => (
-        <div
-          className="square"
-          style={{ backgroundColor: el.color }}
-          key={el.id}
-        >
-          {el.value}
-        </div>
-      ))}
-      {objectsCopy.map((el) => (
-        <div className="square" key={el.id}>
-          {el.value}
-        </div>
-      ))}
+      <div className="object">
+        {objects.map((el) => (
+          <div
+            className="square"
+            style={{ backgroundColor: el.color }}
+            key={el.id}
+          >
+            {el.value}
+          </div>
+        ))}
+      </div>
+
+      <div className="object">
+        {objectsCopy
+          .filter((obj) => obj.value >= 0 && obj.value <= 5)
+          .map((filteredValue) => (
+            <div className="square" style={{ backgroundColor: "yellow" }}>
+              {filteredValue.value}
+            </div>
+          ))}
+        {objectsCopy
+          .filter((obj) => obj.value < 0)
+          .map((filteredValue) => (
+            <div className="square" style={{ backgroundColor: "red" }}>
+              {filteredValue.value}
+            </div>
+          ))}
+        {objectsCopy
+          .filter((obj) => obj.value > 5)
+          .map((filteredValue) => (
+            <div className="square" style={{ backgroundColor: "green" }}>
+              {filteredValue.value}
+            </div>
+          ))}
+      </div>
     </div>
   );
 }
