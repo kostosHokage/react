@@ -5,14 +5,14 @@ export default function Square() {
   const objects = [
     { id: 1, value: 1.2, color: "yellow" },
     { id: 2, value: "Sasha", color: "white" },
-    { id: 3, value: "Kostya", color: "black" },
+    { id: 3, value: "Kostya", color: "green" },
     { id: 4, value: 244, color: "grey" },
     { id: 5, value: 222, color: "yellow" },
     { id: 6, value: "Pasha", color: "red" },
     { id: 7, value: "Egor", color: "blue" },
     { id: 8, value: 10.002, color: "pink" },
     { id: 9, value: 12, color: "borrow" },
-    { id: 10, value: "Developers", color: "black" },
+    { id: 10, value: "Developers", color: "green" },
   ];
 
   const objectsCopy = [
@@ -41,7 +41,6 @@ export default function Square() {
           </div>
         ))}
       </div>
-
       <div className="object">
         {objectsCopy
           .filter((obj) => obj.value >= 0 && obj.value <= 5)
