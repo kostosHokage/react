@@ -1,6 +1,15 @@
 .container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.object {
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+.object:last-child {
+    border: none;
 }
 
 
@@ -10,8 +19,10 @@
     height: 100px;
     width: 100px;
     background-color: red;
-    border: 1px solid black;
-    color: white;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
