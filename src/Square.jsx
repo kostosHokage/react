@@ -20,7 +20,7 @@ export default function Square() {
     { id: 2, value: 12 },
     { id: 3, value: -2 },
     { id: 4, value: 1 },
-    { id: 5, value: -4 },
+    { id: 5, value: -44 },
     { id: 6, value: 0 },
     { id: 7, value: -11 },
     { id: 8, value: 2 },
@@ -31,13 +31,41 @@ export default function Square() {
   function render(object) {
     return (
       <div className="object">
-        {object
-          .filter((obj) => obj.value >= 0 && obj.value <= 5)
-          .map((filteredValue) => (
-            <div className="square" style={{ backgroundColor: "yellow" }}>
-              {filteredValue.value}
-            </div>
-          ))}
+        {object.map((filteredValue) => {
+          if (filteredValue.value >= 0 && filteredValue.value <= 5) {
+            return (
+              <div
+                className="square"
+                key={filteredValue.id}
+                style={{ backgroundColor: "yellow" }}
+              >
+                {filteredValue.value}
+              </div>
+            );
+          }
+          if (filteredValue.value < 0) {
+            return (
+              <div
+                className="square"
+                key={filteredValue.id}
+                style={{ backgroundColor: "red" }}
+              >
+                {filteredValue.value}
+              </div>
+            );
+          }
+          if (filteredValue.value > 5) {
+            return (
+              <div
+                className="square"
+                key={filteredValue.id}
+                style={{ backgroundColor: "green" }}
+              >
+                {filteredValue.value}
+              </div>
+            );
+          }
+        })}
       </div>
     );
   }
