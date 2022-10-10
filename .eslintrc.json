@@ -7,6 +7,7 @@
     "plugins": ["prettier", "react"],
     "rules": {
         "prettier/prettier": ["error"],
+        "semi": [1, "always"],
         "import/prefer-default-export": "off"
     }
 }
