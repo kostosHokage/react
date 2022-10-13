@@ -7,16 +7,7 @@ export default function State() {
   return (
     // eslint-disable-next-line react/button-has-type
     <div>
-      <button
-        onClick={() => {
-          if (!state) {
-            setState(true);
-          } else {
-            setState(false);
-          }
-        }}
-        className="button"
-      >
+      <button type="button" onClick={() => setState(!state)} className="button">
         Click me, i show u box!
       </button>
       {!state ? <div className="square" /> : null}
