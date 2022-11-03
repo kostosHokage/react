@@ -13,8 +13,6 @@ export default function State() {
     console.log("я родился");
   }, []);
 
-  // eslint-disable-next-line no-console
-
   return (
     // eslint-disable-next-line react/button-has-type
     <div>
