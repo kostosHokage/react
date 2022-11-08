@@ -1,9 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function State() {
   const [state, setState] = useState(false);
-  // eslint-disable-next-line no-console
-  console.log(state);
+  const [count, setCount] = useState([]);
+
+  useEffect(() => {
+    setCount([...count, "hello!"]);
+    console.log(count);
+  }, [state]);
+
+  useEffect(() => {
+    console.log("я родился");
+  }, []);
+
   return (
     // eslint-disable-next-line react/button-has-type
     <div>

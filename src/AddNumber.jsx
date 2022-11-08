@@ -10,16 +10,9 @@ export default function AddNumber(props) {
   };
 
   return (
-
     <div>
       {func(num)}
       <br />
     </div>
-
-    <>
-      {func(num)}
-      <br />
-    </>
-
   );
 }
