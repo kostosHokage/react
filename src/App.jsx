@@ -3,6 +3,7 @@ import "./App.css";
 import AddNumber from "./AddNumber";
 import Square from "./Square";
 import State from "./State";
+import StateColor from "./StateColor";
 
 function App() {
   const fn = (x) => x + 5;
@@ -20,6 +21,7 @@ function App() {
       <AddNumber num={2} func={fn3} />
       <AddNumber num={100} func={fn4} />
       <State />
+      <StateColor />
     </div>
   );
 }
