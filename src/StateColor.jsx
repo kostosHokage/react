@@ -6,9 +6,9 @@ export default function StateColor() {
 
   return (
     <div>
-      <StateSquare color={state} />
-      <StateSquare color={state} />
-      <StateSquare color={state} />
+      <StateSquare changeColor={setState} color={state} newColor="yellow" />
+      <StateSquare changeColor={setState} color={state} newColor="green" />
+      <StateSquare changeColor={setState} color={state} newColor="blue" />
     </div>
   );
 }

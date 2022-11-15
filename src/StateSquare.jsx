@@ -1,15 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 
 export default function StateSquare(props) {
+  // const { changeColor, color, newColor } = props;
+
+  StateSquare.propTypes = {
+    changeColor: PropTypes.func.isRequired,
+    color: PropTypes.string.isRequired,
+    newColor: PropTypes.string.isRequired,
+  };
+
   return (
-    <div className="square">
-      <button
-        type="button"
-        onClick={(element) => {
-          // eslint-disable-next-line react/destructuring-assignment,no-param-reassign,react/prop-types
-          element.style = { backgroundColor: props.color };
-        }}
-      >
+    // eslint-disable-next-line react/destructuring-assignment
+    <div
+      className="square1"
+      /* eslint-disable-next-line react/destructuring-assignment */
+      style={{ backgroundColor: props.color, width: 300, height: 300 }}
+    >
+      {/* eslint-disable-next-line react/destructuring-assignment */}
+      <button type="button" onClick={() => props.changeColor(props.newColor)}>
         Click me
       </button>
     </div>
