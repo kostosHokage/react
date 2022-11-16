@@ -1,9 +1,6 @@
 import React, { StrictMode } from "react";
 import "./App.css";
-import AddNumber from "./AddNumber";
-import Square from "./Square";
-import State from "./State";
-import StateColor from "./StateColor";
+import { AddNumber, Square, State, StateColor } from "./components";
 
 function App() {
   const fn = (x) => x + 5;
