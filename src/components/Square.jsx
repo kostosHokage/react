@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
-import { render } from "./render";
+import "../App.css";
+import { render } from "../render";
 
 export default function Square() {
   const objectsCopy = [
