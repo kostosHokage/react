@@ -1,7 +1,12 @@
 import React, { StrictMode } from "react";
 import "./App.css";
-import { AddNumber, Square, State, StateColor } from "./components";
-import ChildrenComponent from "./components/ChildrenComponent";
+import {
+  AddNumber,
+  Square,
+  State,
+  StateColor,
+  ChildrenComponent,
+} from "./components";
 
 function App() {
   const fn = (x) => x + 5;
@@ -22,7 +27,9 @@ function App() {
         <State />
         <StateColor />
         <hr />
-        <ChildrenComponent>{Square}</ChildrenComponent>
+        <ChildrenComponent>
+          <Square />
+        </ChildrenComponent>
       </div>
     </React.StrictMode>
   );
