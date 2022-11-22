@@ -3,5 +3,6 @@ import Square from "./Square";
 import State from "./State";
 import StateColor from "./StateColor";
 import StateSquare from "./StateSquare";
+import ChildrenComponent from "./ChildrenComponent";
 
-export { AddNumber, Square, State, StateSquare, StateColor };
+export { AddNumber, Square, State, StateSquare, StateColor, ChildrenComponent };
