@@ -16,5 +16,5 @@ export default function Square() {
     { id: 10, value: 6 },
   ];
 
-  return <div className="container">{render(objectsCopy)}</div>;
+  return <div>{render(objectsCopy)}</div>;
 }
