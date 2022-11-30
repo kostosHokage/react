@@ -94,3 +94,25 @@
     color: red;
 }
 
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 20px;
+    border: 1px solid black;
+    padding: 20px;
+    max-width: 260px;
+    background-color: #bebef4;
+
+}
+
+.post__title {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
