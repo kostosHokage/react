@@ -66,6 +66,7 @@
 .links-page {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .links-page h1 {
@@ -97,6 +98,7 @@
 .posts {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .post {
