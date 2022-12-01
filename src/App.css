@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lucida Grande", sans-serif;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .object {
@@ -40,6 +44,7 @@
     display: flex;
     padding: 50px;
     background-color: #4191f4;
+    justify-content: center;
 }
 
 .header a {
@@ -47,9 +52,69 @@
     font-size: 24px;
     color: white;
     margin-right: 20px;
+    transition: color 0.2s;
 }
 
 .header a:last-child {
     margin: 0;
+}
+
+.header a:hover {
+    color: red;
+}
+
+.links-page {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.links-page h1 {
+    margin-bottom: 20px;
+}
+
+.links-page__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.links-page__content a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    width: fit-content;
+    margin-bottom: 10px;
+    transition: color 0.2s;
+}
+
+.links-page__content a:last-child {
+    margin-bottom: 0;
+}
+
+.links-page__content a:hover {
+    color: red;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 20px;
+    border: 1px solid black;
+    padding: 20px;
+    max-width: 260px;
+    background-color: #bebef4;
+
+}
+
+.post__title {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
 }
 
