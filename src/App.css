@@ -13,6 +13,24 @@
     padding: 20px;
 }
 
+.input {
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 10px 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 0;
+    border: 1px solid #5d646b;
+    background-color: gray;
+    color: white;
+}
+
+.button:active {
+    background-color: #a9a9a9;
+}
+
 .object {
     display: flex;
     border-bottom: 2px solid black;

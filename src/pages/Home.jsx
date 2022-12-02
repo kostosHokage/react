@@ -11,6 +11,7 @@ export default function Home() {
           <Link to="/Info">Info</Link>
           <Link to="/OldTasks">Old Tasks</Link>
           <Link to="/Posts">Posts</Link>
+          <Link to="/GetPost">Get Post</Link>
         </div>
       </div>
     </div>
