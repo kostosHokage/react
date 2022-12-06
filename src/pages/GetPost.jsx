@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Post } from "../components";
 
 export default function GetPost() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState();
   const [value, setValue] = useState("");
 
   const getPost = (id, state) => {
@@ -38,13 +39,17 @@ export default function GetPost() {
           Показать пост
         </button>
       </form>
-      <div className="post" key={items.id}>
-        <div className="post__title">
-          <b>Название: </b>
-          {items.title}
-        </div>
-        <div className="post__content">{items.body}</div>
-      </div>
+
+      {items ? (
+        <Post
+          key={items.id}
+          title={items.title}
+          body={items.body}
+          id={items.id}
+        />
+      ) : (
+        <span />
+      )}
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Post } from "../components";
 
 export default function Posts() {
   const [items, setItems] = useState([]);
@@ -18,23 +19,19 @@ export default function Posts() {
         {items.map((newPosts) => {
           if (newPosts.id < 38) {
             return (
-              <div className="post" key={newPosts.id}>
-                <div className="post__title">
-                  <b>Название: </b>
-                  {newPosts.title}
-                </div>
-                <div className="post__content">{newPosts.body}</div>
-              </div>
+              <Post
+                key={newPosts.id}
+                title={newPosts.title}
+                body={newPosts.body}
+                id={newPosts.id}
+              />
             );
           }
           if (newPosts.id === 77) {
             return (
               <div className="post">
                 <div>Post id: {newPosts.id}</div>
-                <div className="post__title">
-                  <b>Название: </b>
-                  {newPosts.title}
-                </div>
+                <div className="post__title">{newPosts.title}</div>
                 <div className="post__content">{newPosts.body}</div>
               </div>
             );
