@@ -3,7 +3,7 @@ import { Post } from "../components";
 
 export default function GetPost() {
   const [items, setItems] = useState();
-  const [value, setValue] = useState("");
+  const [sense, setSense] = useState("");
 
   const getPost = (id, state) => {
     if (id) {
@@ -27,19 +27,18 @@ export default function GetPost() {
           className="input"
           type="number"
           onChange={(event) => {
-            setValue(event.target.value);
+            setSense(event.target.value);
           }}
-          value={value}
+          value={sense}
         />
         <button
           className="button"
           type="submit"
-          onClick={(e) => submit(e, value, setItems)}
+          onClick={(e) => submit(e, sense, setItems)}
         >
           Показать пост
         </button>
       </form>
-
       {items ? (
         <Post
           key={items.id}
