@@ -13,6 +13,24 @@
     padding: 20px;
 }
 
+.input {
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 10px 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 0;
+    border: 1px solid #5d646b;
+    background-color: gray;
+    color: white;
+}
+
+.button:active {
+    background-color: #a9a9a9;
+}
+
 .object {
     display: flex;
     border-bottom: 2px solid black;
@@ -98,7 +116,7 @@
 .posts {
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
 }
 
 .post {
@@ -107,6 +125,7 @@
     margin: 0 20px 20px;
     border: 1px solid black;
     padding: 20px;
+    border-radius: 20px;
     max-width: 260px;
     background-color: #bebef4;
 
@@ -116,5 +135,6 @@
     display: flex;
     margin-bottom: 30px;
     flex-direction: column;
+    text-align: center;
 }
 
