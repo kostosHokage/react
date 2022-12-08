@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button, Input } from "@mantine/core";
 import { Post } from "../components";
 
 export default function GetPost() {
@@ -22,22 +23,22 @@ export default function GetPost() {
 
   return (
     <div className="container">
-      <form>
-        <input
-          className="input"
+      <form className="form">
+        <Input
+          // className="input"
           type="number"
           onChange={(event) => {
             setSense(event.target.value);
           }}
           value={sense}
         />
-        <button
-          className="button"
+        <Button
+          // className="button"
           type="submit"
           onClick={(e) => submit(e, sense, setItems)}
         >
           Показать пост
-        </button>
+        </Button>
       </form>
       {items ? (
         <Post

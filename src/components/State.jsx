@@ -6,10 +6,10 @@ export default function State() {
 
   useEffect(() => {
     setCount([...count, "hello!"]);
-    console.log(count);
   }, [state]);
 
   useEffect(() => {
+    // eslint-disable-next-line no-console
     console.log("я родился");
   }, []);
 

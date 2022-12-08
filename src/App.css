@@ -119,6 +119,10 @@
     justify-content: center;
 }
 
+.form {
+    display: flex;
+}
+
 .post {
     display: flex;
     flex-direction: column;
@@ -128,7 +132,6 @@
     border-radius: 20px;
     max-width: 260px;
     background-color: #bebef4;
-
 }
 
 .post__title {
