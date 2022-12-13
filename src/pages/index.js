@@ -4,5 +4,6 @@ import NotFound from "./NotFound";
 import OldTasks from "./OldTasks";
 import Posts from "./Posts";
 import GetPost from "./GetPost";
+import Todo from "./Todo";
 
-export { Home, Info, NotFound, OldTasks, Posts, GetPost };
+export { Home, Info, NotFound, OldTasks, Posts, GetPost, Todo };
