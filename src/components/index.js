@@ -5,6 +5,7 @@ import Post from "./Post";
 import StateColor from "./StateColor";
 import StateSquare from "./StateSquare";
 import ChildrenComponent from "./ChildrenComponent";
+import TodoForm from "./TodoForm";
 
 export {
   AddNumber,
@@ -14,4 +15,5 @@ export {
   StateColor,
   ChildrenComponent,
   Post,
+  TodoForm,
 };
