@@ -1,15 +1,18 @@
-import React, { useState } from "react";
-import { TodoForm } from "../components";
+import React from "react";
+import { Checkbox } from "@mantine/core";
 
 export default function Todo() {
-  const [todos, setTodos] = useState([]);
-
-  const addTask = () => {};
-  const removeTask = () => {};
-  const handleToggle = () => {};
-
+  const list = [
+    { id: 0, title: "Съесть деда" },
+    { id: 1, title: "Съесть окрошку" },
+  ];
   return (
-    <div>Количество задач: {todos.length}</div>
-    <TodoForm />
+    <div>
+      {list.map((items) => (
+        <div key={items.id}>
+          <Checkbox label={items.title} mb="10px" />
+        </div>
+      ))}
+    </div>
   );
 }
